@@ -2,14 +2,14 @@
 %define upstream_version 0.12
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	4
 
 Summary:	Common utilities for IRC-related tasks
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/IRC/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/hinrik/irc-utils
+Source0:	https://cpan.metacpan.org/authors/id/H/HI/HINRIK/IRC-Utils-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
