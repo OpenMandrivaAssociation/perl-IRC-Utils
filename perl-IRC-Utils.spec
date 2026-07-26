@@ -1,15 +1,13 @@
 %define upstream_name    IRC-Utils
-%define upstream_version 0.12
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	4
+Version:	0.12
+Release:	5
 
 Summary:	Common utilities for IRC-related tasks
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/hinrik/irc-utils
-Source0:	https://cpan.metacpan.org/authors/id/H/HI/HINRIK/IRC-Utils-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/H/HI/HINRIK/IRC-Utils-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -21,7 +19,7 @@ with when working with IRC. Mode lines, ban masks, message encoding and
 formatting, etc.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
